@@ -1,0 +1,213 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Grolborne · Brewmaster Monk (MoP Classic)</title>
+<meta name="theme-color" content="#0b1526">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Grolborne">
+<link rel="apple-touch-icon" href="icons/icon-180.png"><link rel="icon" href="icons/icon-192.png">
+<link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css">
+</head><body>
+<header class="bar">
+ <div class="bar-top"><div class="who"><span class="crest"><img class="ci1" src="icons/spells/classicon_monk.jpg" alt=""><img class="ci1" src="icons/spells/monk_stance_drunkenox.jpg" alt=""><img class="ci1" src="icons/spells/achievement_brewery_2.jpg" alt=""></span><b>Grolborne</b><span>Pandaren Brewmaster Monk · MoP Classic · Lv <span id="curLv">1</span></span></div>
+  <div class="lvpick"><button id="lvDown" aria-label="Level down">−</button><select id="lvSel" aria-label="Current level"></select><button id="lvUp" aria-label="Level up">+</button></div></div>
+ <button id="rotBtn" class="rotbtn" aria-expanded="false">🍺 Rotation <span id="rotTag"></span></button>
+ <div id="rot" class="rot" hidden></div>
+ <nav class="tabs"><a href="#start">Start</a><a href="#path">1-90</a><a href="#spec">Spec</a><a href="#bars">Bars</a><a href="#tank">Tank</a><a href="#profs">Profs</a><a href="#setup">Setup</a><a href="#ww">Windwalker</a></nav>
+</header>
+<main>
+
+<section id="t-start" class="tab"><h2>Start</h2>
+ <div class="dec"><h3>Decisions for you</h3>
+  <ol>
+   <li><b>Faction</b> (permanent, chosen at the end of the Wandering Isle): Alliance or Horde. See the faction card below. {W:No source ranks one faction as faster for a Monk, so this is purely your call.}</li>
+   <li><b>Level 45 talent</b>: I recommend Chi Brew; Power Strikes and Ascension are fine too (Spec tab).</li>
+   <li><b>Professions</b>: my pick is Mining + Blacksmithing; the speed alternative is Mining + Herbalism (Profs tab).</li>
+   <li><b>Stance while solo</b>: sources disagree. Icy Veins and Wowhead say stay in Stance of the Sturdy Ox always; Warcraft Tavern says Fierce Tiger is OK for single targets (Tank tab).</li>
+  </ol></div>
+ <div class="card"><h3>What this is</h3>
+  <p>Grolborne is a <b>Pandaren Brewmaster Monk</b> in <b>Mists of Pandaria Classic</b>. This is a ~2 week warm-up for Forever, so nothing in here is Forever content.</p>
+  <p>Brewmaster is the tank spec. Icy Veins: very safe, but slower than Windwalker for leveling. Wowhead: not the most popular leveling spec, but the Monk's mobility plus a defense and AoE kit, strong early Keg Smash damage, and quick dungeon queues make it great if you want to level through dungeons.</p>
+  {S:IV Leveling|Wowhead BM Leveling}</div>
+ <div class="card"><h3>Pandaren racials</h3>
+  <table><tr><td>Epicurean</td><td>100% more stats from Well Fed food</td></tr><tr><td>Inner Peace</td><td>Twice as much rested experience</td></tr><tr><td>Gourmand</td><td>+5 Cooking skill</td></tr><tr><td>Bouncy</td><td>Half falling damage</td></tr><tr><td>Quaking Palm</td><td>Incapacitates the target 4 s (turns off your attack)</td></tr></table>
+  <p class="note">Rested XP: log off in an inn or rest area and kills give 200% more XP while it lasts. It builds 5% per 8 hours of rest up to 150%, and Pandaren build it twice as fast.</p>
+  {S:Wowhead Pandaren|Wowhead Leveling Tips}</div>
+ <h2>Wandering Isle walkthrough</h2>
+ <p class="note">Tap a box when you finish a stage. There are <b>no optional quests</b> on the isle, so pick up every quest you see (it saves backtracking). No mailboxes, and no Cooking or Fishing trainers. Whittler Dewei (63, 41.6) and Elder Oakpaw (50.6, 58.6) teach the other professions if you want them early. The isle also has no class trainers, and Monk abilities are learned automatically as you level.</p>
+ {{WI}}
+ {S:Warcraft Tavern Wandering Isle|Wowhead Wandering Isle|Warcraft Wiki Monk abilities}
+ <h2>Faction choice (at A New Fate)</h2>
+ <div class="two">
+  <div class="fac a"><b>Alliance</b>After a cutscene you land at the entrance between Elwynn Forest and Stormwind City, and Aysa sends you in to meet King Varian Wrynn. Quests: Joining the Alliance, The Alliance Way, An Old Pit Fighter (a sparring match with Varian). Then pick a 10-20 zone: Westfall, Loch Modan, Darkshore or Bloodmyst Isle. Pandaria entry at 85: The King's Command and The Mission, ending in Paw'don Village.</div>
+  <div class="fac h"><b>Horde</b>After a cutscene you land on one of the Orgrimmar zeppelin towers, and Ji sends you to meet Garrosh Hellscream. Quests: Joining the Horde, The Horde Way, Hellscream's Gift. Hellscream's Gift sends you and Ji into the Ring of Valor against three level 10 elites (Frozengore, Oggax, Gadoon); Warcraft Tavern calls it potentially tough and suggests playing carefully or partying up. Then pick Azshara, Northern Barrens, Silverpine Forest or Ghostlands. Pandaria entry at 85: The Art of War, All Aboard!, Into the Mists, ending in Honeydew Village.</div>
+ </div>
+ <p class="note">The choice can't be changed in-game later (only out-of-game faction change). Pick based on where friends or your guild are. Pandaren racials are identical either way.</p>
+ {S:Warcraft Wiki A New Fate|Warcraft Wiki Wandering Isle|Warcraft Tavern Wandering Isle|Warcraft Tavern Get to Pandaria}
+ <div class="card"><h3>Where to go next</h3>
+  <ul><li>Capital boards: <b>Hero's Call Board</b> (Stormwind, center of the Trade District) or <b>Warchief's Command Board</b> (Orgrimmar, in front of Grommash Hold). They always have a breadcrumb to a zone for your level.</li>
+  <li>Then follow the <a href="#path">1-90 tab</a> (zone by level range, dungeons that open).</li>
+  <li>At level 20 your Monk hub, the Peak of Serenity, opens via Zen Pilgrimage (for the 50% XP Enlightenment dailies).</li></ul>
+  {S:Wowhead Leveling Tips|Warcraft Tavern Monk Leveling}</div>
+</section>
+
+<section id="t-path" class="tab"><h2>Leveling 1-90</h2>
+ <p class="note">Tap a range to open it. Check it off and it collapses. In MoP Classic you level 1-58 in the old world (Cataclysm version), then Outland, Northrend, the Cataclysm zones, and finally Pandaria at 85. Zone suggestions are sources' recommendations, not rules.</p>
+ {W:The 1-85 zone ranges and the 1-80 dungeon level ranges come from Cataclysm / Burning Crusade / Wrath Classic guides. MoP Classic uses that same world, but I did not find a MoP Classic page that repeats them.}
+ <label class="ci inline"><input type="checkbox" id="hideDone"> <span>Hide finished ranges</span></label>
+ <div class="barch"><b>Monk leveling extras</b> Quest while using your Peak of Serenity Enlightenment daily when you can. Every 10 levels (20, 30 ... 80) a new class quest opens there; each repeats daily and gives 50% extra XP for an hour. Dual Specialization is available from a Monk trainer at 30 (info only). Heirlooms scale to 80 (85 with upgrades) but are bought on another character (Wowhead, Warcraft Tavern).{S:Warcraft Tavern Monk Leveling|Wowhead BM Leveling}</div>
+ {{PATH}}
+</section>
+
+<section id="t-spec" class="tab"><h2>Rotation and talents</h2>
+ <div class="card"><h3>Brewmaster basics</h3>
+  <ul>
+   <li>Stay in {sp:Stance of the Sturdy Ox}: -25% damage taken, +20% Stamina, +10% Energy regen, immunity to crits (Icy Veins), and it enables <b>Stagger</b>. Specialization abilities start at 10.</li>
+   <li>Resources: <b>Energy</b> (max 100) pays for Chi builders like {sp:Jab}. <b>Chi</b> (max 4, or 5 with Ascension) pays for finishers. Chi decays when you leave combat, so fights start at 0 Chi.</li>
+   <li>{sp:Keg Smash} (L11) generates 2 Chi and covers enemies within 8 yards of your target in Dizzying Haze (50% slow, 15 s). {sp:Expel Harm} (L26) heals a little and builds Chi.</li>
+   <li>{sp:Blackout Kick} (L7) spends Chi; from 34 (Brewmaster Training) it gives <b>Shuffle</b> (6 s, +20% Stagger), so keep it up.</li>
+  </ul>{S:IV Rotation|Wowhead BM Leveling|Wowhead BM Rotation}</div>
+ <div class="card"><h3>Core priority (about L34 and up)</h3>
+  <ol>
+   <li>{sp:Blackout Kick} if Shuffle is missing</li>
+   <li>{sp:Expel Harm} when Desperate Measures is active (45+, under 35% health)</li>
+   <li>{sp:Touch of Death} on a fight you can finish (3 Chi; kills a target below your max health)</li>
+   <li>{sp:Elusive Brew} (off the global) at 13+ stacks (36+)</li>
+   <li>{sp:Keg Smash} on cooldown, especially at 2 or less Chi</li>
+   <li>{sp:Expel Harm} on cooldown if you aren't at full health</li>
+   <li>{sp:Blackout Kick} to keep Shuffle up</li>
+   <li>{sp:Jab} at 70+ Energy (not if it would overcap Chi)</li>
+   <li>{sp:Tiger Palm} as the filler</li>
+  </ol>
+  <p class="note">3+ enemies: Keg Smash first, then {sp:Spinning Crane Kick} (46+), and Breath of Fire only if you'll still have Chi for Shuffle. The header Rotation button shows the list for your current level.</p>
+  {S:Wowhead BM Leveling|Wowhead BM Rotation|IV Rotation|Warcraft Tavern Monk Leveling}</div>
+ <div class="card"><h3>Defensives (what each does)</h3>
+  <table>
+   <tr><td>{sp:Guard}</td><td>L26. 2 Chi, off the global, 30 s cooldown, absorbs damage and makes your self-heals 30% stronger. Cast {sp:Tiger Palm} first for +15% absorb.</td></tr>
+   <tr><td>{sp:Fortifying Brew}</td><td>L24. 20 s: +20% health, +20% Stagger, -20% damage taken. Use it before the big hit.</td></tr>
+   <tr><td>{sp:Elusive Brew}</td><td>L36. Auto-attack crits give 3 stacks each (max 15). It gives +30% dodge for 1 s per stack, 6 s cooldown, so Icy Veins says use it above 6 stacks (Wowhead: always at 13+ so you don't cap). Off the global.</td></tr>
+   <tr><td>{sp:Purifying Brew}</td><td>L75. 1 Chi clears all Staggered damage. Maintaining Shuffle matters more than spamming it.</td></tr>
+   <tr><td>{sp:Zen Meditation}</td><td>L82. Channel: -90% damage for 8 s and redirects the next 5 harmful spells on your group to you. Breaks on movement or a melee hit.</td></tr>
+   <tr><td>{sp:Avert Harm}</td><td>L48. Redirects 20% of damage taken by group members within 10 yards to you for 6 s (ends early under 10% health). Risky.</td></tr>
+  </table>
+  <p class="note">Gift of the Ox (L56): melee hits can drop healing spheres next to you; walk into them. Vengeance (L10): damage you take raises your Attack Power for 20 s.</p>
+  {S:IV Rotation|Wowhead BM Rotation|Wowhead BM Leveling}</div>
+ <h2>Talents</h2>
+ <p class="note">Talent tiers unlock at 15, 30, 45, 60, 75 and 90, all specs share the same list. Icy Veins notes you can change them easily, so none of these picks is locked in.</p>
+ {{TALENTS}}
+ <div class="card"><h3>Glyphs</h3>
+  <p><b>Major:</b> Glyph of Rapid Rolling (Roll travels farther in quick succession), Glyph of Fortuitous Spheres (a free healing sphere when health drops below 25%, 30 s internal cooldown), Glyph of Spinning Crane Kick (no movement slow while spinning), Glyph of Touch of Death (no 3 Chi cost, longer cooldown; for elite quest enemies), Glyph of Fortifying Brew (Icy Veins: damage reduction 25%, health bonus 10%), Glyph of Leer of the Ox (adds a statue taunt).</p>
+  <p><b>Minor:</b> Glyph of Water Roll, Glyph of Spirit Roll (Roll while a ghost), Glyph of Zen Flight (instant flying form; needs level 60+).</p>
+  <p class="note">Warcraft Tavern lists the slot levels as 25, 50, 75 for both major and minor glyphs and suggests Rapid Rolling / Spinning Crane Kick / Fortuitous Spheres in that order.</p>
+  {W:Glyph slot levels are only stated by Warcraft Tavern.}{S:IV Leveling|Wowhead BM Leveling|Warcraft Tavern Monk Leveling}</div>
+ <div class="card"><h3>Stats and gear</h3>
+  <p>Wowhead's leveling priority for Brewmaster: <b>Agility</b> &gt; Critical Strike &gt; Haste &gt; Hit/Expertise (only matters against enemies 3+ levels above you) &gt; Mastery (unlocks at 80, only improves Stagger; mostly ignore it while leveling). Always prefer the highest item level piece.</p>
+  <p>Warcraft Tavern's general order is Agility, Mastery, Crit, Haste, which leans toward the endgame tank priorities rather than leveling.</p>
+  <p>Monks use Fist Weapons, Polearms, Staves and 1H Axes/Maces/Swords, and can't use a shield. Dual wielding 1H is usually better than one 2H (Warcraft Tavern). Cloth is fine until 50; from 50 wear Leather (Leather Specialization).</p>
+  {W:Stat priorities differ between sources; I'm following Wowhead's leveling-specific order.}{S:Wowhead BM Leveling|Warcraft Tavern Monk Leveling|IV Rotation}</div>
+</section>
+
+<section id="t-bars" class="tab"><h2>Bars <span id="barLv"></span></h2>
+ <p class="note">Same 7/7/7 layout as your paladin app. <b>Top</b> = clicked combat cooldowns, <b>Middle</b> = keys 1-7, <b>Bottom</b> = out-of-combat. Slots appear as the ability unlocks at that level, and gold-edged slots are new. Roll lives on <b>key 5</b>. Key 1 is the most-used key.</p>
+ <div class="barch"><b>Key 1 swap at 34</b> Before 34, key 1 is {sp:Jab} (it builds Chi and dumps Energy) and Tiger Palm costs 1 Chi. From 34 (Brewmaster Training) you fill globals with {sp:Tiger Palm}, so key 1 becomes Tiger Palm and Jab slides to key 2. {W:The exact bar layout is my design from the rotation priority, not a published layout.}</div>
+ <div class="barch" id="barChange"></div>
+ <div id="barsBox"></div>
+ <div class="card"><h3>Not on the three bars</h3>
+  <p>Spinning Crane Kick (46) and Breath of Fire (18) for pack pulls · Chi Brew (45) · Charging Ox Wave (60) · Diffuse Magic (75) · Clash (18) · Disable (28) · Spear Hand Strike (32) · Paralysis (44) · Nimble Brew (30) · Avert Harm (48) · Zen Meditation (82) · Crackling Jade Lightning (54) · Healing Sphere (64).</p>
+  <p class="note">Swap Spinning Crane Kick in for key 6 ({sp:Expel Harm}) or key 7 on big pulls if you like; that's your call. Breath of Fire is on key 7 from 18, then replaced by Chi Wave at 30 since Wowhead says it's rarely worth it from 34.</p>
+  {S:Wowhead BM Leveling|Wowhead BM Rotation|Warcraft Wiki Monk abilities}</div>
+ <div class="card"><h3>Provoke macro (Icy Veins)</h3>
+  <pre class="mac">#showtooltip
+/cast [nomod] Provoke
+/target [mod:shift] Black Ox Statue
+/cast [mod:shift] Provoke
+/cast [mod:ctrl] Leer of the Ox</pre>
+  <p class="note">Provoke on the Black Ox Statue (level 70) taunts every enemy within 8 yards of it. Leer of the Ox needs the Glyph of Leer of the Ox and doesn't work on raid bosses.</p>{S:IV Macros|IV Rotation}</div>
+</section>
+
+<section id="t-tank" class="tab"><h2>Tanking as Brewmaster</h2>
+ <div class="card"><h3>Solo leveling notes</h3>
+  <ul>
+   <li>Pull big. Wowhead: Brewmaster trades damage for defense and AoE, so use it on kill-X quests. Pulls just take a bit longer solo.</li>
+   <li>{sp:Provoke} (L14) is the only taunt that also speeds the target up by 50%, handy to pull a far-away enemy. {sp:Crackling Jade Lightning} (54+) can tag a mob from range.</li>
+   <li>{sp:Touch of Death} (L22) is for elites or big quest enemies. {sp:Paralysis} (L44) works on any controllable enemy but doesn't keep you out of combat if you stray too close.</li>
+   <li>{sp:Breath of Fire} is fine early on for AoE, but rarely from 34 on, when Blackout Kick's Shuffle matters more.</li>
+   <li>Stance: Icy Veins and Wowhead say stay in {sp:Stance of the Sturdy Ox} always (you aren't in it by default after a spec change, and key abilities need it). {W:Warcraft Tavern says Fierce Tiger is OK for damage and movement when not making big pulls. The sources disagree.}</li>
+   <li>Visit the Peak of Serenity regularly for Enlightenment (50% XP) and class quests. Zen Pilgrimage: Return takes you back to where you left.</li>
+   <li>Slower but safer than Windwalker (Icy Veins).</li>
+  </ul>{S:Wowhead BM Leveling|IV Leveling|Warcraft Tavern Monk Leveling|IV Rotation}</div>
+ <div class="card"><h3>Dungeon tanking basics</h3>
+  <ul>
+   <li>Tanks and healers usually get through the Dungeon Finder queue almost instantly, and Wowhead says Brewmaster's durability makes it great for dungeon leveling. Run each dungeon at least once as it unlocks: all of its quests are available from the dungeon start, so grab them before you queue.</li>
+   <li>You set the pace: the tank decides how much to pull, so match it to your healer's mana (Wowhead). Open with {sp:Keg Smash}: Dizzying Haze slows enemies 50% for 15 s and gives them a 3% chance to hit themselves.</li>
+   <li>3+ enemies: Keg Smash on all of them, then {sp:Spinning Crane Kick} (46+; it only makes Chi if it hits 3+ and you can't use other abilities during the channel), and Breath of Fire only if you can spare the Chi from Shuffle. Always keep Shuffle up. From 70, summon your Black Ox Statue away from enemies and Provoke it to force everything within 8 yards of it onto you.</li>
+   <li>{sp:Clash} (L18): you and the target charge each other and stun everything within 6 yards for 4 s (35 s cooldown).</li>
+   <li>Use {sp:Guard} when you expect a hit or health drops, {sp:Fortifying Brew} before big damage, and {sp:Purifying Brew} (75) after a big spike.</li>
+   <li><b>Stagger</b> only affects physical damage: 20% of each hit is delayed over 10 s (Shuffle adds another 20%). Magic damage isn't staggered and mostly can't be dodged, so use Diffuse Magic (75 talent) against heavy magic damage.</li>
+   <li>Self-heal on demand: Expel Harm, Gift of the Ox spheres (56+), and Healing Sphere (L64, 40 Energy).</li>
+  </ul>{S:Wowhead Leveling Tips|Wowhead BM Leveling|IV Rotation|Wowhead BM Rotation|Wowhead Cata Dungeons}</div>
+</section>
+
+<section id="t-profs" class="tab"><h2>Professions</h2>
+ <div class="card"><h3>My pick: Mining + Blacksmithing</h3>
+  <ul>
+   <li><b>Mining</b> is a gathering profession (Wowhead pairs it with Blacksmithing): you gain XP when you skill up, and its Toughness gives +480 Stamina.</li>
+   <li><b>Blacksmithing</b> is Warcraft Tavern's top crafting pick for Brewmaster: two extra sockets (gloves and bracers), which can hold gems like +320 Agility or +640 Mastery/Crit.</li>
+   <li>Both trainers are at the Peak of Serenity (Master Brandom), so Zen Pilgrimage covers it. You can also learn most professions on the Wandering Isle (Whittler Dewei, Elder Oakpaw) and buy tools.</li>
+  </ul>
+  <p class="note"><b>Honest take:</b> Warcraft Tavern says crafting professions generally slow leveling and are more about endgame or alts; gathering is what helps leveling. If you want pure speed, take Mining + Herbalism (both give XP on skill-ups; Herbalism's Lifeblood is a big Haste boost). Wowhead suggests gatherers swap one slot to a crafter at max level.</p>
+  {S:Warcraft Tavern Monk Leveling|Warcraft Tavern BM Professions|Wowhead Professions|Warcraft Tavern Wandering Isle}</div>
+ <div class="card"><h3>Secondary professions (no limit)</h3>
+  <ul>
+   <li><b>First Aid</b>: Wowhead calls it a strong leveling pick (bandages for downtime). Trainer: Master Bier at the Peak of Serenity.</li>
+   <li><b>Cooking</b>: Pandaren get double Well Fed stats. Master Chang at the Peak sells cheap stat foods, upgraded every 10 levels. Cooking and Fishing level easily 1-600 in Pandaria.</li>
+   <li><b>Archaeology</b>: gives some XP as you dig, but depends on dig sites near you.</li>
+  </ul>{S:Wowhead Leveling Tips|Warcraft Tavern Monk Leveling|Warcraft Tavern BM Professions|Wowhead Professions}</div>
+ <div class="card"><h3>MoP Classic profession notes</h3>
+  <ul><li>Primary max is two, secondary has no limit. The new top rank, Zen Master, raises the cap to 600.</li>
+  <li>Bag space: you start with a 16-slot bag; bags come from drops, vendors, crafters and the Auction House (Wowhead).</li></ul>{S:Wowhead Professions|Wowhead Leveling Tips}</div>
+</section>
+
+<section id="t-setup" class="tab"><h2>Settings tips</h2>
+ <div class="card"><h3>Turn off "Not enough energy" (Error Speech)</h3>
+  <p>Open the game menu → Options → Sound (the checkbox is called <b>Enable Error Speech</b>) and untick it. That silences the character's voice lines like "Not enough energy", "I'm out of range" and "I can't do that yet".</p>
+  <p>Console version: <code>/console Sound_EnableErrorSpeech 0</code> (use <code>1</code> to turn it back on).</p>
+  {W:The only MoP Classic source for the menu path is an old Wowhead forum thread (it says "under Sound or Interface options"), so the exact menu wording in your client isn't verified. The console command name appears in a Blizzard forum thread from 2019.}{S:Wowhead forum: error speech|Blizzard forum: Sound_EnableErrorSpeech}</div>
+ <div class="card"><h3>Cooldown numbers on your bars</h3>
+  <p><b>OmniCC</b> has a MoP Classic build on CurseForge (last updated Dec 14, 2025). It puts countdown text on action bars and almost every other cooldown. Install it from <a href="https://www.curseforge.com/wow/addons/omni-cc" target="_blank" rel="noopener">CurseForge</a> with your addon manager.</p>
+  <p class="note">If you also enable the game's own "Show Numbers for Cooldowns" you'd get two numbers. Leave that off with OmniCC.</p>
+  {W:I only found the built-in "Show Numbers for Cooldowns" checkbox confirmed for retail, not MoP Classic.}{S:OmniCC (CurseForge)}</div>
+ <div class="card"><h3>Other quality-of-life</h3>
+  <ul>
+   <li>Questie (a questing addon) saves a lot of travel time (Wowhead).</li>
+   <li>Minimap tracking can show innkeepers, flight masters and repair NPCs. Toggle it from the minimap (Wowhead).</li>
+   <li>Set your Hearthstone at an inn near your questing area (15-minute cooldown). Log out in an inn or rest area for rested XP.</li>
+  </ul>{S:Wowhead Leveling Tips}</div>
+</section>
+
+<section id="t-ww" class="tab"><h2>Alt spec: Windwalker (short)</h2>
+ <div class="card"><h3>Why you might switch</h3>
+  <p>Icy Veins: Windwalker is the faster leveling spec; Brewmaster is safer but slower. Warcraft Tavern: Windwalker is better against one or two enemies at a time and bursts mobs down chain after chain.</p>
+  <p>Specialization abilities, including {sp:Fists of Fury} (L10) and {sp:Rising Sun Kick} (L56), come online at the same levels as listed in the ability table. At level 30 Dual Specialization is available from a Monk trainer (info only), so you can keep both specs.</p>
+  {S:IV Leveling|Warcraft Tavern Monk Leveling|Warcraft Wiki Monk abilities}</div>
+ <div class="card"><h3>Windwalker quest rotation (Warcraft Tavern)</h3>
+  <ol>
+   <li>Stay in Stance of the Fierce Tiger (the default)</li>
+   <li>{sp:Expel Harm} if hurt and under 2 Chi (26+)</li>
+   <li>{sp:Chi Brew} if under 2 Chi (45+)</li>
+   <li>{sp:Jab} if under 2 Chi</li>
+   <li>{sp:Tiger Palm} to keep Tiger Power up</li>
+   <li>{sp:Rising Sun Kick} on cooldown (56+)</li>
+   <li>{sp:Fists of Fury} on cooldown, unless Tiger Palm or Rising Sun Kick needs to be cast first</li>
+   <li>Chi Wave on cooldown (30+), {sp:Blackout Kick} with spare Chi</li>
+   <li>{sp:Flying Serpent Kick} to gap-close if short on Chi/Energy</li>
+  </ol>
+  <p class="note">Stat order for Windwalker: Agility, Haste, Crit, Mastery (Warcraft Tavern). Warcraft Tavern's talent picks (Tiger's Lust, Chi Wave, Chi Brew, Charging Ox Wave, Diffuse Magic) are the same for every spec.</p>
+  {S:Warcraft Tavern Monk Leveling}</div>
+</section>
+
+<div class="card credits"><h3>Credits and flags</h3><p>Spell and class icons © Blizzard Entertainment, downloaded once from Wowhead's public icon CDN and bundled here. Facts come from the linked pages (Icy Veins, Wowhead, Warcraft Tavern, Warcraft Wiki, Blizzard). Personal, non-commercial fan page; not affiliated with Blizzard. MoP Classic only, no Forever content. Items marked ⚠️ could not be fully verified.</p></div>
+</main>
+<script>{{DATA}}</script>
+<script src="app.js"></script>
+</body></html>
